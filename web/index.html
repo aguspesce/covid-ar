@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap 4 (before all other CSS files) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Website title -->
+    <title>covid-ar</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/favicon-32x32.png"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="d-flex flex-column justify-content-center">
+        <h1>Datos COVID-19 en Argentina</h1>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <h2>Análisis a Nivel Nacional</h2>
+
+          <h3>Datos Diarios</h3>
+          <div class="row">
+            <div class="col-lg shadow">
+              <iframe
+                id=""
+                scrolling="no"
+                style="border: none"
+                seamless=""
+                src="plots/casos_diarios.html"
+                height="525"
+                width="100%"
+              >
+              </iframe>
+            </div>
+
+            <div class="col-lg shadow">
+              <iframe
+                id=""
+                scrolling="no"
+                style="border: none"
+                seamless=""
+                src="plots/fallecidos_diarios.html"
+                height="525"
+                width="100%"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <h3>Casos Acumulados</h3>
+          <div class="row">
+            <div class="col shadow">
+              <iframe
+                id=""
+                scrolling="no"
+                style="border: none"
+                seamless=""
+                src="plots/casos_acumulado.html"
+                height="525"
+                width="100%"
+              >
+              </iframe>
+            </div>
+
+            <div class="col shadow">
+              <iframe
+                id=""
+                scrolling="no"
+                style="border: none"
+                seamless=""
+                src="plots/fallecidos_acumulado.html"
+                height="525"
+                width="100%"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Síntomas</h2>
+
+          <p>Si presentás dos o más de los siguientes síntomas:</p>
+          <img src="img/sintomas.jpg" class="mx-auto d-block"/>
+          <p>
+            fiebre de 37,5°C o más, tos, dolor de garganta, dificultad
+            respiratoria o pérdida brusca de gusto u olfato, comunicate al
+            número nacional: <strong>0800-222-1002</strong>
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Prevención</h2>
+
+          <img src="img/recomendaciones.jpg" class="mx-auto d-block" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          Source code available in
+          <a href="https://github.com/aguspesce/covid-ar"
+            >github.com/aguspesce/covid-ar</a
+          >.
+        </p>
+        <p>
+          This work is licensed under a
+          <a href="http://creativecommons.org/licenses/by/4.0/"
+            >Creative Commons Attribution 4.0 International License</a
+          >.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
