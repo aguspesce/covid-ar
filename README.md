@@ -1,18 +1,18 @@
-# Pagina Web con los datos de COVID-19 para la Argentina
+# Página Web con los datos de COVID-19 para la Argentina
 
-**Código fuente de la pagina web [covid-ar]() donde se muestra a evolución de
+**Código fuente de la página web [covid-ar]() donde se muestra a evolución de
 los contagios y fallecimientos debido al COVID-19 en Argentina**
 
 ## Fuente de datos
 
-Los datos utilizados para para graficar fueron obtenidos de repositorio
+Los datos utilizados para graficar fueron obtenidos de repositorio
 [Covid19arData](https://github.com/SistemasMapache/Covid19arData) recolectados
 por [Sistema Mapache](https://smapache.com.ar/es/).
 
-## Licensia
+## Licencia
 
-La pagina web como el scrip para crear las gráficas estan balo licensia
-[Creative Commons Attribution 4.0 International License][cc-by].
+La página web como el script para crear las gráficas están bajo licencia
+[Creative Commons Attribution 4.0 International License][cc-by]
 
 [![CC BY 4.0][cc-by-image]][cc-by]
 
