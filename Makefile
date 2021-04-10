@@ -17,5 +17,5 @@ check:
 format:
 	prettier --write $(PRETTIER_ARGS)
 
-plot:
+plots:
 	python code/datos-pais.py
