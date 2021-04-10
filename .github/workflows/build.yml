@@ -51,7 +51,7 @@ jobs:
 
       # Deploy website only if scheduled on main or when pushed to main
       - name: Deploy website to GitHub Actions
-        if: sucess() && ((github.event_name == 'schedule' && github.ref == 'refs/heads/main') | github.event_name == 'push')
+        if: success() && ((github.event_name == 'schedule' && github.ref == 'refs/heads/main') | github.event_name == 'push')
         # Don't use tags: https://julienrenaux.fr/2019/12/20/github-actions-security-risk/
         uses: peaceiris/actions-gh-pages@bbdfb200618d235585ad98e965f4aafc39b4c501
         with:
