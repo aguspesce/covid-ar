@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Graficas sobre la evolucion del COVID-19 en Argentina
+
 # In[1]:
 
+
+from pathlib import Path
+import os
 
 import numpy as np
 import pandas as pd
@@ -13,6 +18,10 @@ import plotly.express as px
 # In[2]:
 
 
+# Path para guardar las graficas
+plots_dir =  Path(os.path.realpath(__file__)).absolute().parent.parent / "web" / "plots"
+
+# Direccion a los datos
 URL = "https://docs.google.com/spreadsheets/d/16-bnsDdmmgtSxdWbVMboIHo5FRuz76DBxsz_BbsEVWA/export?format=csv&id=16-bnsDdmmgtSxdWbVMboIHo5FRuz76DBxsz_BbsEVWA&gid=0"
 
 RENAME_COLUMNS = {
@@ -104,7 +113,7 @@ fig.update_xaxes(
     #tickformat="%b\n%Y",
 )
 
-fig.write_html("../web/plots/casos_diarios.html")
+fig.write_html((plots_dir / "casos_diarios.html").as_posix())
 fig.show()
 
 
@@ -141,7 +150,7 @@ fig.update_layout(
     )
 )
 
-fig.write_html("../web/plots/fallecidos_diarios.html")
+fig.write_html((plots_dir / "fallecidos_diarios.html").as_posix())
 fig.show()
 
 
@@ -165,7 +174,7 @@ fig.update_xaxes(
     
 )
 fig.update_layout(showlegend=False, )
-fig.write_html("../web/plots/casos_acumulado.html")
+fig.write_html((plots_dir / "casos_acumulados.html").as_posix())
 fig.show()
 
 
@@ -187,7 +196,7 @@ fig.update_xaxes(
     
 )
 fig.update_layout(showlegend=False, )
-fig.write_html("../web/plots/fallecidos_acumulado.html")
+fig.write_html((plots_dir / "fallecidos_acumulados.html").as_posix())
 fig.show()
 
 
