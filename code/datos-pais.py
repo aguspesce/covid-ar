@@ -39,7 +39,7 @@ PROVINCIAS = [
 
 def fetch_covid_data_argentina(province=None):
     """
-    Fetch data de numeros de infectados de COVID
+    Fetch data de números de infectados de COVID
     
     Parameters
     ----------
@@ -89,7 +89,7 @@ fig = px.line(
     title="Nuevos casos diarios en Argentina", 
     height=500, 
     width=700,
-    labels=dict(casos_diarios="Numero de casos", fecha="Fecha", color=""), 
+    labels=dict(casos_diarios="Número de casos", fecha="Fecha", color=""), 
     color=px.Constant("Casos promediados a 7 dias")
 )
 
@@ -126,7 +126,7 @@ fig = px.line(
     title="Muertes diarias en Argentina", 
     height=500, 
     width=700,
-    labels=dict(fallecidos_diarios="Numero de fallecidos", fecha="Fecha", color=""),
+    labels=dict(fallecidos_diarios="Número de fallecidos", fecha="Fecha", color=""),
     color=px.Constant("Casos promediados a 7 dias")
 )
 
@@ -163,10 +163,10 @@ fig.show()
 fig = px.line(
     y=datos_arg.casos_diarios.cumsum(), 
     x=datos_arg.index,
-    title="Cantidad de casos nuevos acumlados", 
+    title="Cantidad de casos nuevos acumulados", 
     height=500, 
     width=700,
-    labels=dict(y="Numero de casos", x="Fecha"),
+    labels=dict(y="Número de casos", x="Fecha"),
 )
 fig.update_xaxes(
     dtick="M1",
@@ -188,7 +188,7 @@ fig = px.line(
     title="Cantidad acumulada de fallecidos", 
     height=500, 
     width=700,
-    labels=dict(y="Numero de fallecidos", x="Fecha"),
+    labels=dict(y="Número de fallecidos", x="Fecha"),
 )
 fig.update_xaxes(
     dtick="M1",
